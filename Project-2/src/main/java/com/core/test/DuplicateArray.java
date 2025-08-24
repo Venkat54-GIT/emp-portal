@@ -15,6 +15,7 @@ public class DuplicateArray {
 		    assert nums[i] == expectedNums[i];
 		}
 	}
+
 	public static int removeDuplicates(int[] nums) {
 		System.out.println(Arrays.toString(nums));
 		Set<Integer> s=new HashSet<Integer>();
@@ -25,4 +26,5 @@ public class DuplicateArray {
 		System.out.println("added");
 		return s.size();
 	}
+
 }
