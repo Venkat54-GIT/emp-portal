@@ -5,20 +5,16 @@ import java.util.HashSet;
 import java.util.Set;
 
 public class DuplicateArray {
-
 	public static void main(String[] args) {
 		int[] nums = {1,2,0,3,4,3}; 
 		int[] expectedNums = {0,1,2,3,4}; 
-
 		int k = removeDuplicates(nums); 
 		System.out.println(k);
 		assert k == expectedNums.length;
 		for (int i = 0; i < k; i++) {
 		    assert nums[i] == expectedNums[i];
 		}
-		
 	}
-	
 	public static int removeDuplicates(int[] nums) {
 		System.out.println(Arrays.toString(nums));
 		Set<Integer> s=new HashSet<Integer>();
@@ -28,5 +24,4 @@ public class DuplicateArray {
 		System.out.println(s);
 		return s.size();
 	}
-
 }
