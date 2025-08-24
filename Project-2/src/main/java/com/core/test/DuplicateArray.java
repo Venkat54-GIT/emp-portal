@@ -15,10 +15,16 @@ public class DuplicateArray {
 		    assert nums[i] == expectedNums[i];
 		}
 	}
-	/*
-	 * public static int removeDuplicates(int[] nums) {
-	 * System.out.println(Arrays.toString(nums)); Set<Integer> s=new
-	 * HashSet<Integer>(); for(int i=0;i<nums.length;i++){ s.add(nums[i]); }
-	 * System.out.println(s); return s.size(); }
-	 */
+
+	public static int removeDuplicates(int[] nums) {
+		System.out.println(Arrays.toString(nums));
+		Set<Integer> s=new HashSet<Integer>();
+		for(int i=0;i<nums.length;i++){
+            s.add(nums[i]);
+        }
+		System.out.println(s);
+		System.out.println("added");
+		return s.size();
+	}
+
 }
