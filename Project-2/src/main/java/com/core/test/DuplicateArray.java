@@ -22,6 +22,7 @@ public class DuplicateArray {
             s.add(nums[i]);
         }
 		System.out.println(s);
+		System.out.println("added");
 		return s.size();
 	}
 }
