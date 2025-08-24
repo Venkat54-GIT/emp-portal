@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="ddt" class="java.util.Date"/>
+    <bean id="wmg2" class="com.kt.beans.WishMessageGenerator2"/>
+    <bean id="wmg" class="com.kt.beans.WishMessageGenerator1">
+    <constructor-arg name="date" ref="ddt"/>
+    <constructor-arg name="wmg2" ref="wmg2"/>
+    </bean>
+ </beans>
