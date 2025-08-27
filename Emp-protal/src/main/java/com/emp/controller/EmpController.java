@@ -8,6 +8,6 @@ public class EmpController {
 
 	@GetMapping(value="/")
 	public String getWelcomeMessage() {
-		return "Welcome to Emp Portal";
+		return "**Welcome to Emp Portal**";
 	}
 }
